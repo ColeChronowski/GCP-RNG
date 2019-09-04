@@ -46,14 +46,3 @@ the Google Cloud Console](https://console.cloud.google.com/appengine/versions).
 1.  Explore the other [Google Cloud Platform sample
     applications](https://github.com/GoogleCloudPlatform/java-docs-sample) for
     Java™.
-
-## Contributing changes
-
-* See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-* ## Licensing
-
-* See [LICENSE](LICENSE)
-
-Java is a registered trademark of Oracle Corporation and/or its affiliates.
-
