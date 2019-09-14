@@ -1,27 +1,15 @@
 # Random Number Generator Compute Engine for Java™
 
-## Before you begin
+## Dependencies
 
-Make sure you install jetty9.
+Make sure you have installed Java 8 or newer.
 
-In Ubuntu, you can do this with the command
+## Firewall
 
-`sudo apt install jetty9`
+Make sure you open up the firewall on your virtual machine to allow port 8080 TDP.
 
-## Deploying to App Engine
+## Running
 
-To run the application locally, use the [Maven App Engine
-plugin](https://cloud.google.com/appengine/docs/java/tools/using-maven).
+Run the following command in the directory GCP-RNG/Java/ComputeEngine
 
-    mvn clean appengine:run
-
-View the app at [localhost:8080](http://localhost:8080).
-
-To deploy the app to App Engine, run
-
-    mvn clean appengine:deploy
-
-After the deploy finishes, you can view your application at
-`https://YOUR_PROJECT.appspot.com`, where `YOUR_PROJECT` is your Google Cloud
-project ID. You can see the new version deployed on the [App Engine section of
-the Google Cloud Console](https://console.cloud.google.com/appengine/versions).
+`java -jar start.jar`
