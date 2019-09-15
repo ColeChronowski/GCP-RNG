@@ -13,3 +13,7 @@ Make sure you open up the firewall on your virtual machine to allow port 8080 TD
 Run the following command in the directory GCP-RNG/Java/ComputeEngine
 
 `java -jar start.jar`
+
+## Observing
+
+You'll see the random number at <external ip>:8080/rng
