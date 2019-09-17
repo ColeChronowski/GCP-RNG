@@ -1,5 +1,9 @@
 # Random Number Generator Compute Engine for Java™
 
+## Demo
+
+http://35.188.106.110:8080/rng/
+
 ## Create a virtual machine
 
 I recommend making it an f1-micro (the cheapest one) running Ubuntu 18.0.4 LTS.
