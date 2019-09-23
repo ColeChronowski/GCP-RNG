@@ -1,5 +1,6 @@
 import requests
 import time
+import yaml
 
 MAX_NUMBER = 1000000
 MIN_NUMBER = 1
@@ -46,29 +47,26 @@ def test_randomness(url):
         responses = set([])
 
 def test_timing():
-    # Array of tuples of urls. The first part of the tuple is the description of the url, and the second part of the tuple is the url itself.
-    # TODO: have these urls come from a YAML file
-    urls = [('Java App Engine', 'https://civil-dolphin-251917.appspot.com/'), 
-            ('Python App Engine', 'http://silent-region-214714.appspot.com/'),
-            ('Java Virtual Machine', 'http://35.188.106.110:8080/rng/'),
-            ('Python Virtual Machine', 'http://35.202.0.25/')]
-    
-    # Loop through the urls
-    for url in urls:
-        # Print the description of the url and the time
-        start = time.time()
+    # open yaml file that contains urls
+    with open(r'url.yaml') as file:
+        # Dictionary of urls. The the key is a description of the url, and the value is the url itself.
+        urls = yaml.load(file, Loader=yaml.FullLoader)
+        # Loop through the urls
+        for url in urls.items():
+            # Print the description of the url and the time
+            start = time.time()
 
-        # make the request
-        r = requests.get(url[1])
+            # make the request
+            r = requests.get(url[1])
 
-        # get the end time
-        end = time.time()
+            # get the end time
+            end = time.time()
 
-        # Verify that the request fits the constraints
-        if verify_number(r.text):
-            # print the results
-            print(url[0], (end - start), "seconds")
-        else:
-            print("An error has ocurred")
+            # Verify that the request fits the constraints
+            if verify_number(r.text):
+                # print the results
+                print(url[0], (end - start), "seconds")
+            else:
+                print("An error has ocurred")
 
 test_timing()
