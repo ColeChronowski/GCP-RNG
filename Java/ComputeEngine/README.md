@@ -10,7 +10,17 @@ I recommend making it an f1-micro (the cheapest one) running Ubuntu 18.0.4 LTS.
 
 ## Dependencies
 
-Make sure you have installed Java 8 or newer.
+After starting the virtual machine, make sure you install dependencies.
+
+`sudo apt update && sudo apt full-upgrade`
+
+You'll need git and at least Java 8.
+
+`sudo apt install git openjdk-8-jdk`
+
+Then you can clone this repository to the VM.
+
+`git clone https://github.com/ColeChronowski/GCP-RNG.git`
 
 ## Firewall
 
@@ -32,4 +42,4 @@ instead.
 
 ## Observing
 
-You'll see the random number at <external ip>:8080/rng
+You'll see the random number at http://<external ip>:8080/rng
