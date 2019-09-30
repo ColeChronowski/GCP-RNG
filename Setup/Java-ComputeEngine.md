@@ -59,4 +59,6 @@ In your browser, copy the external IP address of your instance and go to http://
 
 ![](https://github.com/ColeChronowski/GCP-RNG/raw/master/Setup/images/Screenshot%20(35).png "screenshot")
 
+This address shows the output of the random number generator.
+
 ![](https://github.com/ColeChronowski/GCP-RNG/raw/master/Setup/images/Screenshot%20(34).png "screenshot")
