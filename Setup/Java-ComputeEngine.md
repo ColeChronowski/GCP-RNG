@@ -2,4 +2,4 @@
 
 
 
-![](https://github.com/ColeChronowski/GCP-RNG/Images/Screenshot%20(19).png "screenshot")
+![](https://github.com/ColeChronowski/GCP-RNG/Setup/images/Screenshot%20(19).png "screenshot")
